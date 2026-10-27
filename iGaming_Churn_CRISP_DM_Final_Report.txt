@@ -1,0 +1,27 @@
+iGAMING PLAYER CHURN — CRISP-DM PROJECT SUMMARY
+
+BUSINESS UNDERSTANDING
+The goal is to identify players at elevated risk of becoming inactive early enough
+for a responsible retention team to consider an appropriate intervention.
+
+DATA PREPARATION
+Eligible players: 5,028
+Churn rate: 57.9%
+Observation window: the first 30 days from each player's first recorded activity.
+Outcome window: the following 45 days; incomplete 75-day histories are excluded.
+Predictors use cash-game and deposit activity from the observation window.
+
+MODELLING AND EVALUATION
+Selected model: Tuned LightGBM.
+Mean training-fold PR-AUC: 0.8119
+Held-out ROC-AUC: 0.7637
+Held-out PR-AUC: 0.7964
+Leading model features: total_cash_sessions, total_deposit_count, net_cash_flow
+
+DEPLOYMENT SCENARIO
+Highest estimated net ROI threshold: 0.45
+Estimated holdout net ROI: $4,737.50
+Assumptions: $150 estimated net value per retained player, a $20 offer cost,
+and a 25% campaign success rate. These are planning assumptions, not causal
+findings. Validate any intervention with a controlled pilot and apply
+responsible-gambling safeguards before using scores operationally.
