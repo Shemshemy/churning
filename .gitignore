@@ -1,0 +1,18 @@
+# Local environments and Python caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Raw player-level source data must not be committed
+data/raw/*.csv
+
+# Jupyter runtime files
+.ipynb_checkpoints/
+checkpoints/
+*.ckpt
+*.checkpoint
+
+# Editor and operating-system files
+.DS_Store
+.vscode/

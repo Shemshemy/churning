@@ -13,14 +13,14 @@ Predictors use cash-game and deposit activity from the observation window.
 
 MODELLING AND EVALUATION
 Selected model: Tuned LightGBM.
-Mean training-fold PR-AUC: 0.8119
-Held-out ROC-AUC: 0.7637
-Held-out PR-AUC: 0.7964
+Mean training-fold PR-AUC: 0.8057
+Held-out ROC-AUC: 0.7723
+Held-out PR-AUC: 0.8193
 Leading model features: total_cash_sessions, total_deposit_count, net_cash_flow
 
 DEPLOYMENT SCENARIO
 Highest estimated net ROI threshold: 0.45
-Estimated holdout net ROI: $4,737.50
+Estimated holdout net ROI: $4,785.00
 Assumptions: $150 estimated net value per retained player, a $20 offer cost,
 and a 25% campaign success rate. These are planning assumptions, not causal
 findings. Validate any intervention with a controlled pilot and apply
